@@ -3,15 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Контакты - Музей "Освобождение Беларуси мышловки Гимназия № 11 г. Минска имени И.Д. Черняховского"</title>
+    <title>Отзывы и Предложения - Музей "Освобождение Беларуси мышловки Гимназия № 11 г. Минска имени И.Д. Черняховского"</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            background-image:url(Web/background.jpg);
         }
         header {
-            background-color: #001d5b;
+            background-image:url(Web/background.jpg);
             color: #fff;
             padding: 10px;
             text-align: center;
@@ -21,6 +22,7 @@
             height: 150px;
             display: inline-block;
             vertical-align: middle;
+            padding-left: 50px;
         }
         h1 {
             display: inline-block;
@@ -28,18 +30,24 @@
             margin: 0;
         }
         nav {
-            background-color: #666;
+            background-color: maroon;
             color: #fff;
             padding: 10px;
             text-align: center;
+            border-radius: 10px; /* Rounded corners for the navigation bar */
         }
         nav a {
             color: #fff;
             font-weight: bold;
             text-decoration: none;
+            margin: 0 10px;
         }
         main {
             padding: 20px;
+        }
+        nav img{
+            height: 245px;
+            width: 343px;
         }
         footer {
             background-color: #333;
@@ -52,7 +60,7 @@
         }
         .blr{
             text-align: center;
-            padding-left: 50px;
+            padding-left: 1px;
             align-items: center;
             vertical-align: middle;
         }
@@ -66,39 +74,106 @@
         }
         main h2{
             text-align: center;
+            color:white;
+
         }
-        .image-text-container {
-            display: flex;
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        
+        }
+        .image-grid img {
+            max-width: 100%;
+            height: auto;
+            border: 2px solid blue; 
+            border-radius: 10px; 
+            height: 345px;
+            width: 500px;
+        }
+        .review-form {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .review-form h3 {
+            color: maroon;
+        }
+        .review-form textarea {
+            width: 100%;
+            padding: 10px;
+            border-radius: 10px; /* Rounded corners for the textarea */
+            border: 2px solid #ccc;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+        .review-form input[type="submit"] {
+            background-color: maroon;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 10px; /* Rounded corners for the submit button */
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .review-form input[type="submit"]:hover {
+            background-color: darkred;
+        }
+        .reviews{
+            text-align: center;
+            color:white;
+        }
+        .reviews p{
+            color: black;
+
+        }
+        .txt1{
+           text-align: ;
         }
     </style>
 </head>
 <body>
 
-<header>
-    <img src="12.png" alt="Логотип музея" class="logo">
-    <h1>Музей "Освобождение Беларуси"<br>Гимназия № 11 г. Минска имени И.Д. Черняховского</h1><img src="blr.png" class="blr">
-</header>
+    <header>
+        <img src="blr.png" class="blr">
+        <h1>Музей "Освобождение Беларуси"<br>Гимназия № 11 г. Минска имени И.Д. Черняховского</h1> 
+        <a href="http://gymn11.minsk.edu.by/"><img src="logo.png" alt="Логотип музея" class="logo"></a>
+    </header>
 
 <nav>
     <a href="site2.html">Главная</a> |
     <a href="eks.html">Экспозиции</a> |
-    <a href="contacts.html">Контакты</a> <!-- Добавленная ссылка на страницу контактов -->
+    <a href="contacts.html">Контакты</a> |
+    <a href="test1.html">Отзывы</a> 
 </nav>
 
 <main>
-    <h2>Контакты</h2>
-    <div class="contact-box">
-        <p><strong>Адрес:</strong><br>Ваш адрес здесь</p>
-        <p><strong>Администратор:</strong><br>Имя администратора</p>
+    <h2>Отзывы и Предложения</h2>
+    <div class="image-grid">
+        <img src="Web/otz2.jpeg" alt="Отзыв 1">
+        <img src="Web/otz3.jpeg" alt="Отзыв 2">
+        <img src="Web/otz4.jpeg" alt="Отзыв 3">
+        <img src="Web/otz5.jpeg" alt="Отзыв 4">
+        <img src="Web/otz6.jpeg" alt="Отзыв 5">
+        <img src="Web/otz7.jpeg" alt="Отзыв 6">
     </div>
-    <div class="contact-box">
-        <p><strong>Приемная:</strong><br>Ваш номер телефона</p>
-        <p><strong>Заказ экскурсий:</strong><br>Ваш адрес электронной почты</p>
+    <div id="reviews" class="reviews">
+        <h3>Отзывы</h3>
+        <p><i>Провел встречу с учащимися  11 ‘’Б’’ класса посвященную 35-летию выводя Советских войск из Афганистана. Встреча прошла в музее. Музей удивляет своим информационным содержанием и исключительным дизайном. В ходе беседы с учащимися был положен обстоятельный, достойный диалог. Благодарю за оказанное время и доверие. 
+            :</i><br><br>Помощник члена Совета Республики, ветеран боевых действий в Афганистане, кавалер ордена Сирябской  звезды.
+        </p>
+           
+    </div>
+    <div class="review-form">
+        <h3>Оставить отзыв</h3>
+        <form action="#" method="POST">
+            <textarea id="review" name="review" rows="4" cols="50"></textarea><br>
+            <input type="submit" value="Отправить">
+        </form>
     </div>
 </main>
 
 <footer>
-    <p>&copy; 2024 Музей "Освобождение Беларуси мышловки Гимназия № 11 г. Минска имени И.Д. Черняховского"</p>
+    <p>&copy; 2024 Музей "Освобождение Беларуси  Гимназия № 11 г. Минска имени И.Д. Черняховского"</p>
 </footer>
 
 </body>
