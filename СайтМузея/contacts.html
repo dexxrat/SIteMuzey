@@ -9,13 +9,17 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-image:url(Web/background.jpg);
+            background-image: url(bckg1.jpg);
+            background-attachment: fixed;
+            background-size: cover;
         }
         header {
-            background-image:url(Web/background.jpg);
+            background-color: midnightblue;
             color: #fff;
             padding: 10px;
             text-align: center;
+            background-attachment: fixed;
+            background-size: cover;
         }
         .logo {
             margin-right: 20px;
@@ -30,7 +34,7 @@
             margin: 0;
         }
         nav {
-            background-color: maroon;
+            background-color: rgb(60, 161, 166);
             color: #fff;
             padding: 10px;
             text-align: center;
@@ -43,6 +47,8 @@
         }
         main {
             padding: 20px;
+            display: flex;
+            justify-content: space-between;
         }
         footer {
             background-color: #333;
@@ -53,13 +59,13 @@
             bottom: 0;
             width: 100%;
         }
-        .blr{
+        .blr {
             text-align: center;
             padding-left: 1px;
             align-items: center;
             vertical-align: middle;
         }
-        main p{
+        main p {
             width: 700px;
             font-family: Times;
             background-color: #e6dede;
@@ -67,45 +73,44 @@
             margin: 10px;
             border: 2px solid #001d5b;
         }
-        main h2{
-            text-align: center;
-            color:white;
+        .contact-box {
+            width: 45%;
         }
-        .image-text-container {
-            display: flex;
+        .image-container {
+            width: 45%;
+            text-align: center;
+        }
+        .image-container img {
+            max-width: 100%;
+            height: auto;
         }
     </style>
 </head>
 <body>
-
     <header>
         <img src="blr.png" class="blr">
         <h1>Музей "Освобождение Беларуси"<br>Гимназия № 11 г. Минска имени И.Д. Черняховского</h1> 
         <a href="http://gymn11.minsk.edu.by/"><img src="logo.png" alt="Логотип музея" class="logo"></a>
     </header>
-
-<nav>
-    <a href="site2.html">Главная</a> |
-    <a href="eks.html">Экспозиции</a> |
-    <a href="contacts.html">Контакты</a>|
-    <a href="test1.html">Отзывы</a> 
-</nav>
-
-<main>
-    <h2>Контакты</h2>
-    <div class="contact-box">
-        <p><strong>Адрес:</strong><br>Ваш адрес здесь</p>
-        <p><strong>Администратор:</strong><br>Имя администратора</p>
-    </div>
-    <div class="contact-box">
-        <p><strong>Приемная:</strong><br>Ваш номер телефона</p>
-        <p><strong>Заказ экскурсий:</strong><br>Ваш адрес электронной почты</p>
-    </div>
-</main>
-
-<footer>
-    <p>&copy; 2024 Музей "Освобождение Беларуси  Гимназия № 11 г. Минска имени И.Д. Черняховского"</p>
-</footer>
-
+    <nav>
+        <a href="site2.html">Главная</a> |
+        <a href="eks.html">Экспозиции</a> |
+        <a href="contacts.html">Контакты</a>|
+        <a href="test1.html">Отзывы</a> 
+    </nav>
+    <main>
+        <div class="contact-box">
+            <p><strong>Адрес:</strong><br>улица Калиновского 36, Минск, Минская область 220086, Беларусь</p>
+            <p><strong>Администратор:</strong><br>Гирш Галина Евгеньевна</p>
+            <p><strong>Приемная:</strong><br>+375173938217</p>
+            <p><strong>Заказ экскурсий:</strong><br>Ваш адрес электронной почты</p>
+        </div>
+        <div class="image-container">
+            <img src="Web/map.jpg" >
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Музей "Освобождение Беларуси  Гимназия № 11 г. Минска имени И.Д. Черняховского"</p>
+    </footer>
 </body>
 </html>

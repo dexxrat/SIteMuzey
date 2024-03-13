@@ -9,18 +9,23 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-image:url(Web/background.jpg);
-            font-style: Times;
+            background-image: url(bckg1.jpg);
+            background-attachment: fixed;
+            background-size: cover;
         }
-        p{
-            margin: 0;
-            
-        }
-        header {
-            background-image:url(Web/background.jpg);
+        header, nav {
+            background-color: midnightblue;
             color: #fff;
             padding: 10px;
             text-align: center;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+        .blr {
+            text-align: center;
+            padding-left: 1px;
+            align-items: center;
+            vertical-align: middle;
         }
         .logo {
             margin-right: 20px;
@@ -35,10 +40,7 @@
             margin: 0;
         }
         nav {
-            background-color: maroon;
-            color: #fff;
-            padding: 10px;
-            text-align: center;
+            background-color: rgb(60, 161, 166);
         }
         nav a {
             color: #fff;
@@ -58,35 +60,45 @@
             bottom: 0;
             width: 100%;
         }
-        .blr{
-            text-align: center;
-            padding-left: 1px;
-            align-items: center;
-            vertical-align: middle;
+        .image-text-container {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
         }
-        main p{
+        .img2 {
+            height: 400px;
+            width: 600px;
+            margin-right: 20px; 
+            margin-top: 0px;
+            border: 2px solid blue; 
+            border-radius: 10px; 
+        }
+        main p {
             width: 700px;
             font-family: Times;
             background-color: #e6dede;
             border: 2px solid blue; 
             border-radius: 10px; 
+            padding: 10px;
         }
-        main h2{
-            text-align: center;
+        .button-container {
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 50px;
+        }
+        .button {
+            background-color: rgb(4, 37, 86);
             color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
         }
-        .img2 {
-            height: 400px;
-    margin-right: 20px; 
-    margin-top: 0px;
-    border: 2px solid blue; 
-            border-radius: 10px; 
-}
-        .image-text-container {
-              display: flex;
-             
-}
-        
+        .button:hover {
+            background-color:rgb(4, 37, 86);
+        }
     </style>
 </head>
 <body>
@@ -105,24 +117,18 @@
 </nav>
 
 <main>
-    <h2>Главная</h2>
     <div class="image-text-container">
         <img src="img2.jpg" class="img2">
-        <p>3 мая 2018 года состоялась торжественная церемония открытия Народного музея «Освобождение Беларуси» в гимназии № 11 города Минска имени И.Д. Черняховского,которую посетил Митрополит Патриарший Экзарх Всея Беларуси Павел. 
+        <p>3 мая 2018 года состоялась торжественная церемония открытия Народного музея «Освобождение Беларуси» в гимназии № 11 города Минска имени И.Д. Черняховского, которую посетил Митрополит Патриарший Экзарх Всея Беларуси Павел. 
 
         У входа в гимназию Патриаршего Экзарха встретили директор гимназии Ольга Леонидовна Бойко и руководитель духовно-образовательного проекта «ЛОГОС», председатель правления Международного общественного объединения «Христианский образовательный центр имени святых Мефодия и Кирилла» священник Святослав Рогальский. 
         
         На площади перед гимназией состоялась торжественная линейка, на которой присутствовали: Чрезвычайный и Полномочный Посол Российской Федерации в Республике Беларусь Александр Александрович Суриков; депутат Палаты Представителей Национального собрания, председатель правления ОО «Белорусский фонд мира» Максим Владимирович Мисько; начальник управления информации, пресс-секретарь главного управления идеологической работы Министерства обороны Республики Беларусь полковник Владимир Матвеевич Макаров; заместитель председателя Комитета по образованию Мингорисполкома Наталья Михайловна Великая; представители администрации Первомайского района города Минска и другие высокопоставленные гости.
-        
-        Митрополит Павел обратился к собравшимся с приветственным словом, в котором поздравил всех с праздником Пасхи Христовой и наступающим Днем Победы. Патриарший Экзарх призвал всех хранить память о подвиге воинов, освобождавших наше Отечество от нацистских захватчиков.
-        
-        Далее участников торжественного мероприятия приветствовали: Посол Российской Федерации в Республике Беларусь Александр Александрович Суриков; а затем праправнучка И.Д. Черняховского, Анна Черняховская.
-        
-        После этого состоялось открытие Народного музея «Освобождение Беларуси». Символическую красную ленточку перерезали: митрополит Павел, Александр Суриков и Анна Черняховская.
-        
-        Далее Патриарший Экзарх совершил освящение музея и оставил запись в книге почетных гостей.
-        
-        В Актовом зале гимназии состоялся концерт, посвященный Дню Победы и открытию Народного музея, призванного увековечить память солдат, офицеров — освободителей Беларуси и тружеников тыла. Среди приглашенных гостей присутствовали дети войны, которых особо почтили все участники праздничного концерта.</p>
+        </p>
+    </div>
+    <div class="button-container">
+            <a href="http://gymn11.minsk.edu.by/" class="button">Заказать экскурсию</a>
+            <a href="http://gymn11.minsk.edu.by/" class="button">Сотрудничество</a>
     </div>
 </main>
 
